@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@2.1.10/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/cube-ui/lib/cube.min.js"></script>
+    <script src="https://cdn.bootcss.com/qs/6.6.0/qs.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/cube-ui/lib/cube.min.css">
+    <style>
+        .cube-btn {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <cube-input v-model="value"></cube-input>
+        <cube-button @click='getTokens'>getTokens</cube-button>
+        <!-- <cube-button @click='getFollowers'>getFollowers</cube-button>
+        <cube-button @click='auth'>微信登录</cube-button>
+        <cube-button @click='getUser'>获取用户信息</cube-button>
+        <cube-button @click='getJsConfig'>获取JSSDk</cube-button> -->
+    </div>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                value: 'input'
+            },
+            methods: {
+                getTokens() {
+                    
+                }
+            },
+            mounted() {
+                
+            }
+        })
+    </script>
+</body>
+
+</html>
